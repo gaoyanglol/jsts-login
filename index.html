@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {height: 100%;}
+    body {
+      height: 100%;
+      margin: 0;
+      background: url(images/bg.png) no-repeat center / cover;
+    }
+
+    .title {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      width: 1014px;
+      height: 51px;
+      top: 9%;
+      left: 50%;
+      margin-left: -507px;
+      background: url(./images/title.png) no-repeat center;
+    }
+    .login {
+      position: absolute;
+      width: 395px;
+      height: 447px;
+      top: 47%;
+      left: 50%;
+      margin-left: -197.5px;
+      margin-top: -223.5px;
+      background: url(./images/login_bg.png) no-repeat;
+    }
+    .login-wrap {
+      width: 100%;
+      box-sizing: border-box;
+      padding:  115px 64px 0;
+    }
+    .user-input  {
+      width: 100%;
+      height: 38px;
+      padding: 7px;
+      background: url(./images/user_input.png) no-repeat center;
+      box-sizing: border-box;
+      padding-left: 43px;
+      margin-bottom: 25px;
+    }
+    .psw-input  {
+      width: 100%;
+      height: 38px;
+      padding: 7px;
+      background: url(./images/psw_input.png) no-repeat center;
+      box-sizing: border-box;
+      padding-left: 43px;
+      margin-bottom: 25px
+    }
+    .ver-input  {
+      width: 152px;
+      height: 38px;
+      padding: 7px;
+      background: url(./images/ver_input.png) no-repeat center;
+      box-sizing: border-box;
+      padding-left: 43px;
+      margin-bottom: 25px;
+    }
+    .login-wrap input {
+      outline: none;
+      height: 24px;
+      width: 100%;
+      margin: 0;
+      border: 0;
+      padding-left: 10px;
+      border-left: 1px solid #0C5E91;
+      box-sizing: border-box;
+      background: none;
+      color: #83d7fd;
+    }
+    .login-wrap input::-webkit-input-placeholder {
+      color: #327ea1;
+    }
+    .login-wrap button {
+      width: 127px;
+      height: 34px;
+      background: url(./images/button.png);
+      outline: none;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      color: #83d7fd;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+    .login-wrap button:hover {
+      background: url(./images/button_hover.png);
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="title"></h1>
+  <div class="login">
+    <div class="login-wrap">
+      <form action="">
+        <div class="user-input">
+          <input type="text" placeholder="请输入用户名">
+        </div>
+        <div class="psw-input">
+          <input type="password" placeholder="请输入密码">
+        </div>
+        <div class="ver-input">
+          <input type="text" placeholder="请输入验证码">
+        </div>
+        <button type="submit">登录</button>
+        <button type="reset" style="float: right;">取消</button>
+        <a href="#" style="text-decoration: none;color:#83d7fd;font-size: 14px;">修改密码</a>
+      </form>
+      
+    </div>
+  </div>
+
+</body>
+</html>
